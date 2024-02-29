@@ -58,7 +58,7 @@ import Link from "next/link";
                     </div>
                     <div className="w-full lg:max-w-[51.9rem]">
                         <h2 className="h2 font-bold leading-[8rem] mb-20">Our Student Visa Application</h2>
-                        <p className="text-3xl lg:text-[2rem] leading-[3rem] my-20">If you are looking for how to start your journey in this track, we're your haven and best bet, as we offer excellent services with track records to guarantee your success.</p>
+                        <p className="text-3xl lg:text-[2rem] leading-[3rem] my-20">If you are looking for how to start your journey in this track, we&apos;re your haven and best bet, as we offer excellent services with track records to guarantee your success.</p>
                         <div className="flex gap-x-7">
                             <Link className="bg-primary w-[18.5rem] h-[5.4rem] flex items-center justify-center text-white text-[1.6rem] font-semibold rounded-md" href="/" >Connect with us</Link>
                             <Link className="text-primary text-[1.6rem] font-semibold border border-[#258575] bg-transparent w-[18.5rem] h-[5.4rem] flex items-center justify-center rounded-md" href="/about" >Learn more</Link>

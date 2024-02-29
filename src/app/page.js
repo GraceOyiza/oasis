@@ -239,7 +239,7 @@ const Home = () => {
         <div>
           <div className="flex flex-col md:flex-row">
             <div className="flex flex-col items-center md:w-[44%]">
-              <h6>LET'S HEAR WHAT THEY HAVE TO SAY</h6>
+              <h6>LET&apos;S HEAR WHAT THEY HAVE TO SAY</h6>
               <h2 className="text-5xl">Sweet Words From Our Students</h2>
               <Image src={GroupImage} width={534} height={484} alt="Group image" />
             </div>

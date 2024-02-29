@@ -13,7 +13,7 @@ const StudyAbroadBanner = ({ title, StudyAbroadBannerImg=[] }) => {
                     <div className="custom-container2 text-center">
                         <h1 className="h1 mb-14">University Application Process</h1>
                         <p className=" mb-20 lg:mb-32 p-10 text-[2rem]"> If you are looking for how to start your journey in this track, 
-                            we're your haven and best bet, as we offer excellent services with track 
+                            we&apos;re your haven and best bet, as we offer excellent services with track 
                             records to guarantee your success.</p>
                         <div className="w-[10%] absolute right-20">
                             <Image src={Vector5}/>
