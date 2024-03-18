@@ -2,15 +2,15 @@
 import Image from "next/image";
 
 
-const Team = ({imgInfo,  bgColor}) => {
+const Team = ({imgInfo,  bgColor="#258575"}) => {
   return (
     <>
       <section  style={{ backgroundColor: bgColor }}>
-        <div>
+        <div className="custom-container">
             <div>
-                <h5>THE TEAM</h5>
+                <h5 className="h5">THE TEAM</h5>
                 <div>
-                    <h1>Meet Our Team</h1>
+                    <h1 className="h4 text-white">Meet Our Team</h1>
                     <div>
                         {/* carousel */}
                     </div>
@@ -24,9 +24,9 @@ const Team = ({imgInfo,  bgColor}) => {
                 <div key={`oasis-${index}`} className="">
                   <div>
                     <div>
-                        <Image src={bgImg}/>
-                      <h4>{teamName}</h4>
-                      <p>{teamRole}</p>
+                      <Image src={bgImg}/>
+                      <h4 className="h6">{teamName}</h4>
+                      <p className="p">{teamRole}</p>
                      
                     </div>
                   </div>

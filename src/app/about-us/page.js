@@ -125,8 +125,9 @@ export default function AboutUs() {
         title="We are Educational & Resource Experts"
         subtitle="Oasis and Oaks is an educational training 
         and resource provider, that helps you achieve your goals. "
-        bannerImg1={BannerAboutUs}
-        bannerImg2={BannerAboutUs2}
+        BannerImg={BannerAboutUs}
+        BannerImg2={BannerAboutUs2}
+        reverse={true}
       />
       <WhoWeAre
         title="Who We Are"

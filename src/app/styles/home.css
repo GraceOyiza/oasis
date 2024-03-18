@@ -4,14 +4,14 @@
 
 .world-section {
     background: #FFF6DD;
-    aspect-ratio: 2/1;
+    aspect-ratio: 61/25;
+}
+
+.home-banner {
+    background-color: #010E0B;
 }
 
 @media screen and (min-width: 990px) {
-    .home-banner {
-        background-color: #010E0B;
-    }
-    
     .home-banner__wrapper {
         padding: calc(1.5rem + (100vw - 700px) * (15 - 90) / (700 -  1000)) 2rem;
     }
@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
     .world-section__wrapper {
         background: url('../assests/images/world.png') no-repeat right;
     }

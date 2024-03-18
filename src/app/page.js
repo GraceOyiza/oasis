@@ -25,6 +25,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles/home.css';
+import OvercomingYourBarrier from "./components/overcome-your-barriers";
+import WhyOasisSession from "./components/why-oasis";
 
 
 const Home = () => {
@@ -111,119 +113,41 @@ const Home = () => {
   return (
     <>
       <HomeBanner />
-      <section>
-        <div className="custom-container">
-          <p className="text-primary text-center text-success">OVERCOME YOUR BARRIERS</p>
-          <h3 className="h3 text-center">Start Your Journey of Excellence and Success Today</h3>
-          <div className="grid grid-cols-1 grid-rows-6 gap-8 md:grid-cols-2 md:grid-rows-3">
-            {successStories.map(({ title, description, image, borderColor }, index) => (
-              <SuccessCard key={`sucess-${index}`}  title={title} description={description} image={image} borderColor={borderColor} />
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="why-oasis">
-        <div className="flex gap-10 flex-col md:flex-row items-center">
-          <Image className="flex-1" width={880} height={739} src={WhyOasis} alt="lop" />
-          <div className="flex-1">
-            <h5>WE HELP YOU ACHIEVE YOUR GOALS</h5>
-            <h2 className="uppercase">Why Oasis and Oaks</h2>
-            <p>Oasis & Oaks is an educational resource provider that helps you achieve your goals. <br/> We offer services in language development, IELTS Preparatory Class, Adult Education, Workplace/Organisational Development Training as well as securing genuine admissions and work placements in foreign countries.</p>
-            <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
-              <div className="p-3 bg-white/[0.05] rounded">
-                <svg className="mb-8" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <circle cx="25.0476" cy="25.0303" r="24.1707" fill="#D9D9D9" fillOpacity="0.08"/>
-                  <g clipPath="url(#clip0_298_5433)">
-                  <path d="M36.0144 20.5146C34.6787 14.6373 29.5519 11.9912 25.0485 11.9912C25.0485 11.9912 25.0485 11.9912 25.0358 11.9912C20.5452 11.9912 15.4057 14.6245 14.07 20.5018C12.5816 27.0661 16.6015 32.6253 20.2398 36.1237C21.5883 37.4213 23.3184 38.0701 25.0485 38.0701C26.7787 38.0701 28.5088 37.4213 29.8445 36.1237C33.4828 32.6253 37.5028 27.0788 36.0144 20.5146ZM25.0485 26.888C22.835 26.888 21.0413 25.0943 21.0413 22.8807C21.0413 20.6672 22.835 18.8735 25.0485 18.8735C27.2621 18.8735 29.0558 20.6672 29.0558 22.8807C29.0558 25.0943 27.2621 26.888 25.0485 26.888Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_298_5433">
-                  <rect width="30.5314" height="30.5314" fill="white" transform="translate(9.7832 9.76489)"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-                <p>Located in 15 Countries</p>
-              </div>
-              <div className="p-3 bg-white/[0.05] rounded">
-                <svg className="mb-8" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <circle cx="25.0476" cy="25.0303" r="24.1707" fill="#D9D9D9" fillOpacity="0.08"/>
-                  <g clipPath="url(#clip0_298_5433)">
-                  <path d="M36.0144 20.5146C34.6787 14.6373 29.5519 11.9912 25.0485 11.9912C25.0485 11.9912 25.0485 11.9912 25.0358 11.9912C20.5452 11.9912 15.4057 14.6245 14.07 20.5018C12.5816 27.0661 16.6015 32.6253 20.2398 36.1237C21.5883 37.4213 23.3184 38.0701 25.0485 38.0701C26.7787 38.0701 28.5088 37.4213 29.8445 36.1237C33.4828 32.6253 37.5028 27.0788 36.0144 20.5146ZM25.0485 26.888C22.835 26.888 21.0413 25.0943 21.0413 22.8807C21.0413 20.6672 22.835 18.8735 25.0485 18.8735C27.2621 18.8735 29.0558 20.6672 29.0558 22.8807C29.0558 25.0943 27.2621 26.888 25.0485 26.888Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_298_5433">
-                  <rect width="30.5314" height="30.5314" fill="white" transform="translate(9.7832 9.76489)"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-                <p>Located in 15 Countries</p>
-              </div>
-              <div className="p-3 bg-white/[0.05] rounded">
-                <svg className="mb-8" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <circle cx="25.0476" cy="25.0303" r="24.1707" fill="#D9D9D9" fillOpacity="0.08"/>
-                  <g clipPath="url(#clip0_298_5433)">
-                  <path d="M36.0144 20.5146C34.6787 14.6373 29.5519 11.9912 25.0485 11.9912C25.0485 11.9912 25.0485 11.9912 25.0358 11.9912C20.5452 11.9912 15.4057 14.6245 14.07 20.5018C12.5816 27.0661 16.6015 32.6253 20.2398 36.1237C21.5883 37.4213 23.3184 38.0701 25.0485 38.0701C26.7787 38.0701 28.5088 37.4213 29.8445 36.1237C33.4828 32.6253 37.5028 27.0788 36.0144 20.5146ZM25.0485 26.888C22.835 26.888 21.0413 25.0943 21.0413 22.8807C21.0413 20.6672 22.835 18.8735 25.0485 18.8735C27.2621 18.8735 29.0558 20.6672 29.0558 22.8807C29.0558 25.0943 27.2621 26.888 25.0485 26.888Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_298_5433">
-                  <rect width="30.5314" height="30.5314" fill="white" transform="translate(9.7832 9.76489)"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-                <p>Located in 15 Countries</p>
-              </div>
-              <div className="p-3 bg-white/[0.05] rounded">
-                <svg className="mb-8" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <circle cx="25.0476" cy="25.0303" r="24.1707" fill="#D9D9D9" fillOpacity="0.08"/>
-                  <g clipPath="url(#clip0_298_5433)">
-                  <path d="M36.0144 20.5146C34.6787 14.6373 29.5519 11.9912 25.0485 11.9912C25.0485 11.9912 25.0485 11.9912 25.0358 11.9912C20.5452 11.9912 15.4057 14.6245 14.07 20.5018C12.5816 27.0661 16.6015 32.6253 20.2398 36.1237C21.5883 37.4213 23.3184 38.0701 25.0485 38.0701C26.7787 38.0701 28.5088 37.4213 29.8445 36.1237C33.4828 32.6253 37.5028 27.0788 36.0144 20.5146ZM25.0485 26.888C22.835 26.888 21.0413 25.0943 21.0413 22.8807C21.0413 20.6672 22.835 18.8735 25.0485 18.8735C27.2621 18.8735 29.0558 20.6672 29.0558 22.8807C29.0558 25.0943 27.2621 26.888 25.0485 26.888Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_298_5433">
-                  <rect width="30.5314" height="30.5314" fill="white" transform="translate(9.7832 9.76489)"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-                <p>Located in 15 Countries</p>
-              </div>
-            </div>
-            <Link href="/about-us">Learn More</Link>
-          </div>
-        </div>
-      </section>
+      <OvercomingYourBarrier successStories={successStories}/>
+      <WhyOasisSession/>
       <section className="world-section">
-        <div className="xs:bg-none sm:bg-none bg-no-repeat bg-right bg-auto w-full h-full world-section__wrapper">
-          <div className="flex items-center h-full">
-            <div>
-              <h3>Trusted by over 100s of Students, Parents & Professionals Worldwide. Since 2014.</h3>
+        <div className="xs:bg-none sm:bg-none bg-no-repeat bg-right bg-auto w-full lg:h-full world-section__wrapper py-[3rem] lg:py-0">
+          <div className="flex flex-col md:flex-row items-center h-full">
+            <div className="max-w-[62.5rem] p-4 md:p-0 ms-8 lg:ms-32">
+              <h3 className="text-5xl	lg:text-[4.8rem] mb-10 text-extrabold">Trusted by over 100s of Students, Parents & Professionals Worldwide. Since 2014.</h3>
               <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
-                <div className="flex flex-col">
-                  <span className="text-success">100+</span>
-                  <span>Clients Reviews</span>
+                <div className="flex flex-col gap-5">
+                  <span className="text-success text-3xl lg:text-7xl font-extrabold">100+</span>
+                  <span className="text-2xl font-semibold">Clients Reviews</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-success">55+</span>
-                  <span>Clients Reviews</span>
+                <div className="flex flex-col gap-5">
+                  <span className="text-success text-3xl lg:text-7xl font-extrabold">55+</span>
+                  <span className="text-2xl font-semibold">Student Ratings</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-success">A+</span>
-                  <span>Clients Reviews</span>
+                <div className="flex flex-col gap-5">
+                  <span className="text-success text-3xl lg:text-7xl font-extrabold">A+</span>
+                  <span className="text-2xl font-semibold">Grade Results</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-success">5+</span>
-                  <span>Clients Reviews</span>
+                <div className="flex flex-col gap-5">
+                  <span className="text-success text-3xl lg:text-7xl font-extrabold">5+</span>
+                  <span className="text-2xl font-semibold">Countries</span>
                 </div>
               </div>
-              <Link href="/about-us">Connect with us</Link>
+              <Link href="/about-us" className="block w-max bg-[#258575] text-white py-6 px-[3rem] rounded mt-10 text-xl lg:text-3xl">Connect with us</Link>
             </div>
-            <Image className="md:hidden" width={880} height={739} src={WorldMap} alt="lop"  />
+            <Image className="lg:hidden" width={880} height={739} src={WorldMap} alt="lop"  />
           </div>
         </div>
       </section>
       <section className="bg-dark">
         <div className="custom-container">
           <h2 className="text-5xl text-center font-extrabold text-white py-12 px-8 ">Where are you thinking of Studying?</h2>
-          <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {studyLocations.map(({ image, country, title }, index) => (
                <div key={`study-location-${index}`} className="relative bg-cover bg-no-repeat bg-center h-[30.7rem] flex flex-col p-12 justify-end"  style={{ backgroundImage: `url(${image.src})`}}>
                 <h6 className="text-white">{country}</h6>
@@ -237,13 +161,13 @@ const Home = () => {
       </section>
       <section className="reviews">
         <div>
-          <div className="flex flex-col md:flex-row">
-            <div className="flex flex-col items-center md:w-[44%]">
-              <h6>LET&apos;S HEAR WHAT THEY HAVE TO SAY</h6>
-              <h2 className="text-5xl">Sweet Words From Our Students</h2>
+          <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col items-center lg:w-[44%] bg-[#FEFDF5]">
+              <h6 className="h6 pt-[10rem]">LET&apos;S HEAR WHAT THEY HAVE TO SAY</h6>
+              <h2 className="text-3xl md:text-7xl ps-[5.9rem] font-extrabold">Sweet Words From Our Students</h2>
               <Image src={GroupImage} width={534} height={484} alt="Group image" />
             </div>
-            <div className="bg-[#FFC727] p-12 md:p-14 lg:p-20 md:w-[56%]">
+            <div className="bg-[#FFC727] p-12 md:p-14 lg:p-20 lg:w-[56%]">
               <div className="max-w-[67.7rem] mx-auto">
                 <Slider {...sliderSettings}>
                   <div className="bg-[#F1F3F6]/[0.26] p-8 md:p-16 rounded-tr-3xl rounded-bl-3xl">

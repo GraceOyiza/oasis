@@ -1,15 +1,13 @@
 "use client";
 import Image from "next/image";
 
-
-
 const TeachingMethods = ({detailsInfo = {}}) => {
   return (
     <>
       <section  >
         <div className="custom-container px-10">
-            <div>
-                <h2 className="h2 font-bold">Our teaching Methods</h2>
+            <div className="my-[15rem]">
+                <h2 className="h2 font-bold text-center pb-[5rem]">Our teaching Methods</h2>
                 <div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
                     {detailsInfo.map(

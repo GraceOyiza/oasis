@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import Logo from "../assests/images/logo.png";
+import Logo from "../assests/images/logo-main.png";
+import LogoAlternative from "../assests/images/logo-alt.png";
 import HomeLogo from "../assests/images/homepage-logo.png"
 import  Link  from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,18 +11,19 @@ const Navigation = () => {
   const pathname =  usePathname();
   const [navOpen, setNavOpen] = useState(false);
   const handleHamburgerClick = () => setNavOpen(!navOpen);
+  console.log('pathname: ', pathname)
 
   useEffect(() => {
-    setNavOpen(false); // Close the navigation panel
-  }, [ pathname ]);
+    setNavOpen(false);
+  }, [pathname]);
   return (
     <>
       <nav className={`navbar navbar-expand-lg w-full ${
           pathname.includes('blog') || pathname.includes('about') ? "relative bg-white" : "absolute bg-transparent"}`}>
-        <div className="custom-container flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className={`custom-container flex flex-wrap items-center justify-between mx-auto p-4 ${navOpen && "bg-white md:bg-none" } `}>
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse logo-container">
             <Image
-              src={Logo}
+              src={pathname === '/'? LogoAlternative : Logo}
               className=""
               alt="Oasis Logo"
               width={100}
@@ -59,7 +61,7 @@ const Navigation = () => {
               <Link
                   href="/about-us"
                   className= {`text-2xl block py-2 px-3 md:p-0 ${ pathname === "/"
-                  ? " text-white"
+                  ? "nav-color md:text-white"
                   : " nav-color"}`}
                   aria-current="page"
                 >
@@ -70,7 +72,7 @@ const Navigation = () => {
               <Link
                   href="/study-abroad"
                   className= {`text-2xl block py-2 px-3 md:p-0 ${ pathname === "/"
-                  ? " text-white"
+                  ? "nav-color md:text-white"
                   : " nav-color"}`}
                 >
                   Study Abroad
@@ -78,24 +80,25 @@ const Navigation = () => {
               </li>
               <li>
               <Link
-                  href="/blog"
+                  href="/ielts"
                   className= {`text-2xl block py-2 px-3 md:p-0 ${ pathname === "/"
-                  ? " text-white"
+                  ? "nav-color md:text-white"
+                  : " nav-color"}`}
+                >
+                  IELTS Exams
+              </Link>
+              </li>
+              <li>
+              <Link
+                  href="/blogs"
+                  className= {`text-2xl block py-2 px-3 md:p-0 ${ pathname === "/"
+                  ? "nav-color md:text-white"
                   : " nav-color"}`}
                 >
                   Blog
               </Link>
               </li>
-              <li>
-              <Link
-                  href="/ielts"
-                  className= {`text-2xl block py-2 px-3 md:p-0 ${ pathname === "/"
-                  ? " text-white"
-                  : " nav-color"}`}
-                >
-                  Events
-              </Link>
-              </li>
+            
             </ul>
            
           </div>

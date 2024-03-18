@@ -7,7 +7,7 @@ const WhoWeAre = ({title, subtitle, Img1 ,Img2}, bgColor) => {
   return (
     <>
       <section  style={{ backgroundColor: bgColor }}>
-        <div>
+        <div className="custom-container">
             <div className="flex flex-col lg:flex-row gap-20 p-20">
               <div className="relative lg:flex-1">
                       <Image src={Img2} className="relative"/>

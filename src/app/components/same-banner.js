@@ -3,29 +3,32 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const SameBanner = ({title, subtitle, bgColor, bannerImg1, bannerImg2}) => {
+const SameBanner = ({title, subtitle, bgColor ="bg-[#FEF5DC]", BannerImg, BannerImg2, PointerImg, reverse=false}) => {
   return (
     <>
-      <section  style={{ backgroundColor: bgColor }}>
-        <div className="custom-container py-14 px-10 pb-40">
-            <div className="flex flex-col lg:flex-row justify-between md:gap-16 lg:gap-20">
-                <div className="max-w-[48.6rem] mb-10 md:mb-0">
-                    <h1 className="h2 font-semibold">{title}</h1>
-                    <p>{subtitle}</p>
-                    <div className="flex">
-                      <Link href="/" className="link-connect">Connect with us</Link>
-                      <Link href="/"className="link-learn">Learn More</Link> 
-                       
+        <section className=" pt-[10rem] lg:pt-[15rem] lg:pb-[10rem]" style={{ backgroundColor: bgColor }}>
+            <div className="custom-container p-6 lg:p-4">
+                <div className={`flex flex-col lg:flex-row gap-x-32 gap-y-40 items-center ${reverse
+            ? "flex-sm-column-reverse lg:flex-row-reverse"
+            : "flex-sm-column flex-lg-row"
+        }`}>
+                    <div className="relative flex gap-x-8 w-full lg:w-[55%]">
+                        <Image className="relative -top-12" width={315} height={511} src={BannerImg} />
+                        <Image className="relative -bottom-12" width={315} height={511} src={BannerImg2} />
+                        {PointerImg && <Image className="absolute right-20" width={186} height={63} src={PointerImg} />}
+                        
+                    </div>
+                    <div className="w-full lg:max-w-[51.9rem]">
+                        <h2 className="h2 font-bold leading-[8rem] mb-20">{title}</h2>
+                        <p className="text-3xl lg:text-[2rem] leading-[3rem] my-20">{subtitle}</p>
+                        <div className="flex gap-x-7">
+                            <Link className="bg-primary w-[18.5rem] h-[5.4rem] flex items-center justify-center text-white text-[1.6rem] font-semibold rounded-md" href="/" >Connect with us</Link>
+                            <Link className="text-primary text-[1.6rem] font-semibold border border-[#258575] bg-transparent w-[18.5rem] h-[5.4rem] flex items-center justify-center rounded-md" href="/about" >Learn more</Link>
+                        </div>
                     </div>
                 </div>
-                <div className="flex md:flex-1">
-                  <Image src={bannerImg2} className="relative flex-1 object-cover"/>
-                  <Image src={bannerImg1} className="relative ms-5 top-20 flex-1 object-cover"/>
-               
-                </div>
             </div>
-        </div>
-      </section>
+        </section>
     </>
   );
 };

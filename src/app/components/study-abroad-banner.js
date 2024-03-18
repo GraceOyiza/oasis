@@ -5,9 +5,9 @@ import Banner1 from "../assests/images/study-abroad-banner-img1.png";
 import Banner2 from "../assests/images/study-abroad-banner-img2.png";
 import Vector5 from "../assests/images/Vector-5.png";
 
-const StudyAbroadBanner = ({ title, StudyAbroadBannerImg=[] }) => {
+const StudyAbroadBanner = () => {
     return (
-        <section className="pt-[10rem] lg:pt-[15rem] lg:pb-[10rem]">
+        <section className="pt-[10rem] lg:pt-[15rem] bg-[#FFE4D2] bg-opacity-60 pb-0">
             <div>
                 <div className="relative">
                     <div className="custom-container2 text-center">

@@ -9,8 +9,8 @@ const HomeBanner = () => {
   return (
     <>
       <section className={`home-banner ${!pathname.includes('blog') ? 'pt-[4rem]': 'pt-0'}`}>
-        <div className="">
-            <div className="flex items-center relative home-banner__wrapper">
+        <div className="mt-[5rem] p-[2rem]">
+            <div className="flex items-center relative home-banner__wrapper lg:mt-[5rem] flex-col-reverse md:flex-row">
                 <div className="w-full custom-container ">
                     <div>
                         <h1 className="h1 text-white">Scale your Hurdles<br/> Lead The Way to your <span className="text-success">Future</span></h1>
@@ -24,11 +24,11 @@ const HomeBanner = () => {
                         </p>
                     </div>
                     <div className="flex gap-8 mt-8">
-                        <Link href="#" className="button text-white">Connect with Us</Link>
-                        <Link href="#" className="button text-white">Learn More</Link>
+                        <Link href="#" className="button text-white bg-[#D5A100] p-5 rounded-md">Connect with Us</Link>
+                        <Link href="#" className="button text-white border border-white p-5 rounded-md">Learn More</Link>
                     </div>
                 </div>
-                <div className="w-1/2 absolute right-0 bottom-0 max-w-[81.2rem] max-h-[73.9rem]">
+                <div className="relative lg:absolute right-0 bottom-0 w-full lg:w-1/2 mb-8 max-w-[81.2rem] max-h-[73.9rem]">
                     <Image src={HomeBannerImage} width={812} height={736} alt="home banner"/>
                 </div>
             </div>

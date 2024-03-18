@@ -1,46 +1,66 @@
 "use client";
 import Image from "next/image";
+import WhyOasis from '../assests/images/why-oasis.png';
+import Link from "next/link";
 
 
-const HomeBanner = () => {
+const WhyOasisSession = () => {
   return (
     <>
-      <section>
-        <div>
-            <div>
-                <Image/>
+       <section className="why-oasis">
+        <div className="flex gap-10 flex-col lg:flex-row items-center p-[2rem] lg:p-0">
+          <Image className="flex-1" width={880} height={739} src={WhyOasis} alt="lop" />
+          <div className="flex-1">
+            <h5 className="h6 text-[#FFC727]">WE HELP YOU ACHIEVE YOUR GOALS</h5>
+            <h2 className="uppercase h2 text-white">Why Oasis and Oaks</h2>
+            <p className="text-white">Oasis & Oaks is an educational resource provider that helps you achieve your goals. 
+              <br/> We offer services in language development, IELTS Preparatory Class, Adult Education, 
+              Workplace/Organisational Development Training as well as securing genuine admissions and work placements in foreign countries.</p>
+            <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 text--white">
+              <div className="p-3 bg-white/[0.05] rounded">
+                <svg className="mb-8" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <circle cx="25.0476" cy="25.0303" r="24.1707" fill="#D9D9D9" fillOpacity="0.08"/>
+                  <g clipPath="url(#clip0_298_5433)">
+                  <path d="M36.0144 20.5146C34.6787 14.6373 29.5519 11.9912 25.0485 11.9912C25.0485 11.9912 25.0485 11.9912 25.0358 11.9912C20.5452 11.9912 15.4057 14.6245 14.07 20.5018C12.5816 27.0661 16.6015 32.6253 20.2398 36.1237C21.5883 37.4213 23.3184 38.0701 25.0485 38.0701C26.7787 38.0701 28.5088 37.4213 29.8445 36.1237C33.4828 32.6253 37.5028 27.0788 36.0144 20.5146ZM25.0485 26.888C22.835 26.888 21.0413 25.0943 21.0413 22.8807C21.0413 20.6672 22.835 18.8735 25.0485 18.8735C27.2621 18.8735 29.0558 20.6672 29.0558 22.8807C29.0558 25.0943 27.2621 26.888 25.0485 26.888Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_298_5433">
+                  <rect width="30.5314" height="30.5314" fill="white" transform="translate(9.7832 9.76489)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <p className="text-white">Located in 15 Countries</p>
+              </div>
+              <div className="p-3 bg-white/[0.05] rounded flex flex-col justify-between">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                <path d="M28.1172 7.31633V12.0233C28.1172 14.8856 26.9723 16.0305 24.11 16.0305H20.6752C17.8129 16.0305 16.668 14.8856 16.668 12.0233V7.31633C16.668 4.45401 17.8129 3.30908 20.6752 3.30908H24.11C26.9723 3.30908 28.1172 4.45401 28.1172 7.31633Z" fill="white"/>
+                <path d="M14.1251 20.0378V24.7447C14.1251 27.607 12.9801 28.7519 10.1178 28.7519H6.68303C3.82071 28.7519 2.67578 27.607 2.67578 24.7447V20.0378C2.67578 17.1754 3.82071 16.0305 6.68303 16.0305H10.1178C12.9801 16.0305 14.1251 17.1754 14.1251 20.0378Z" fill="white"/>
+                <path d="M18.9318 28.752C18.5883 28.752 18.2703 28.5612 18.1049 28.2686C17.9395 27.9633 17.9395 27.6071 18.1176 27.3018L19.3516 25.2409C19.6188 24.7829 20.2039 24.643 20.6619 24.9102C21.1199 25.1773 21.2598 25.7625 20.9927 26.2205L20.7637 26.6021C23.9059 25.7879 26.2212 22.9383 26.2212 19.5544C26.2212 19.0329 26.6537 18.6003 27.1753 18.6003C27.6969 18.6003 28.1167 19.0329 28.1167 19.5672C28.1167 24.6303 23.9949 28.752 18.9318 28.752Z" fill="white"/>
+                <path d="M3.62989 13.448C3.10831 13.448 2.67578 13.0282 2.67578 12.4939C2.67578 7.43082 6.79752 3.30908 11.8606 3.30908C12.2168 3.30908 12.5222 3.4999 12.7003 3.7925C12.8656 4.09781 12.8656 4.45401 12.6875 4.75932L11.4536 6.80747C11.1737 7.26544 10.5885 7.4181 10.1433 7.13823C9.68528 6.87108 9.54534 6.28589 9.81249 5.82792L10.0415 5.44628C6.91201 6.26045 4.58399 9.11005 4.58399 12.4939C4.58399 13.0282 4.15147 13.448 3.62989 13.448Z" fill="white"/>
+              </svg>
+                <p className="text-white">Our End to End Services</p>
+              </div>
+              <div className="p-3 bg-white/[0.05] rounded flex flex-col justify-between">
+              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                <circle cx="24.7449" cy="25.0303" r="24.1707" fill="#D9D9D9" fill-opacity="0.08"/>
+                <path d="M23.8815 13.5813H15.956C13.4245 13.5813 12.1523 14.8662 12.1523 17.4232V37.752H19.0219V32.9815C19.0219 32.4599 19.4544 32.0273 19.976 32.0273C20.4976 32.0273 20.9301 32.4472 20.9301 32.9815V37.752H27.6725V17.4232C27.6725 14.8662 26.413 13.5813 23.8815 13.5813ZM23.1564 25.9847H16.8593C16.3377 25.9847 15.9052 25.5521 15.9052 25.0306C15.9052 24.509 16.3377 24.0765 16.8593 24.0765H23.1564C23.6779 24.0765 24.1105 24.509 24.1105 25.0306C24.1105 25.5521 23.6779 25.9847 23.1564 25.9847ZM23.1564 21.2141H16.8593C16.3377 21.2141 15.9052 20.7816 15.9052 20.26C15.9052 19.7385 16.3377 19.3059 16.8593 19.3059H23.1564C23.6779 19.3059 24.1105 19.7385 24.1105 20.26C24.1105 20.7816 23.6779 21.2141 23.1564 21.2141Z" fill="white"/>
+                <path d="M38.74 36.7978H35.8523V32.9814C37.0608 32.5871 37.9386 31.4548 37.9386 30.1191V27.5748C37.9386 25.9083 36.5774 24.5471 34.9109 24.5471C33.2444 24.5471 31.8832 25.9083 31.8832 27.5748V30.1191C31.8832 31.4421 32.7483 32.5616 33.9313 32.9687V36.7978H10.7529C10.2314 36.7978 9.79883 37.2304 9.79883 37.7519C9.79883 38.2735 10.2314 38.7061 10.7529 38.7061H34.8346C34.86 38.7061 34.8727 38.7188 34.8982 38.7188C34.9236 38.7188 34.9363 38.7061 34.9618 38.7061H38.74C39.2616 38.7061 39.6941 38.2735 39.6941 37.7519C39.6941 37.2304 39.2616 36.7978 38.74 36.7978Z" fill="white"/>
+              </svg>
+                <p className="text-white">750+ Partner Institutions</p>
+              </div>
+              <div className="p-3 bg-white/[0.05] rounded flex flex-col justify-between">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M26.3341 14.2877L20.3932 11.7307L19.0701 11.1709C18.8666 11.0692 18.6885 10.802 18.6885 10.573V6.68026C18.6885 5.45901 17.7853 4.00877 16.6912 3.44902C16.3096 3.2582 15.8516 3.2582 15.47 3.44902C14.3887 4.00877 13.4854 5.47173 13.4854 6.69298V10.5857C13.4854 10.8147 13.3073 11.0819 13.1038 11.1836L5.85258 14.3004C5.05114 14.6311 4.40234 15.6361 4.40234 16.5012V18.1804C4.40234 19.2617 5.21651 19.796 6.22151 19.3635L12.5949 16.6157C13.0911 16.3994 13.4982 16.6666 13.4982 17.2136V18.6257V20.9155C13.4982 21.2081 13.3328 21.6279 13.1292 21.8315L10.1779 24.7956C9.87255 25.1009 9.73262 25.6988 9.87255 26.1313L10.445 27.8614C10.674 28.612 11.5263 28.9682 12.226 28.612L15.2537 26.0677C15.7117 25.6733 16.4622 25.6733 16.9202 26.0677L19.9479 28.612C20.6476 28.9555 21.4999 28.612 21.7544 27.8614L22.3268 26.1313C22.4668 25.7115 22.3268 25.1009 22.0215 24.7956L19.0701 21.8315C18.8539 21.6279 18.6885 21.2081 18.6885 20.9155V17.2136C18.6885 16.6666 19.0829 16.4121 19.5917 16.6157L25.9651 19.3635C26.9701 19.796 27.7843 19.2617 27.7843 18.1804V16.5012C27.7843 15.6361 27.1355 14.6311 26.3341 14.2877Z" fill="white"/>
+              </svg>
+                <p className="text-white">High Visa Success Rate</p>
+              </div>
             </div>
-            <div>
-                <h5>WE HELP YOU ACHIEVE YOUR GOALS</h5>
-                <h2>Why Oasis and Oaks</h2>
-                <p>Oasis & Oaks is an educational resource provider that helps you achieve your goals. 
-We offer services in language development, IELTS Preparatory Class, Adult Education, Workplace/Organisational Development Training as well as securing
- genuine admissions and work placements in foreign countries.
- </p>
-                <div>
-                    <div>
-                        <Image/>
-                        <p></p>
-                    </div>
-                    <div>
-                        <Image/>
-                        <p></p>
-                    </div>
-                    <div>
-                        <Image/>
-                        <p></p>
-                    </div>
-                    <div>
-                        <Image/>
-                        <p></p>
-                    </div>
-                </div>
-                <button>Learn More</button>
-            </div>
+            <Link href="/about-us" className="text-white border border-white py-5 px-[5rem] mt-20 block w-max text-2xl rounded">Learn More</Link>
+          </div>
         </div>
       </section>
     </>
   );
 };
 
-export default HomeBanner;
+export default WhyOasisSession;
