@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Info from "../components/info-Events-visa";
-import EventsImg from "../assests/images/Events.png";
-import EventsImg2 from "../assests/images/Events2.png";
 import ApplyImg from "../assests/images/ApplyImg.png";
 import ApplyImgBg from "../assests/images/ApplyImgBg.png";
 import VisaImg from "../assests/images/visa.png";
@@ -11,18 +8,7 @@ import PointerImg from "../assests/images/pointer.png";
 import Link from "next/link";
 
  const Events = () => {
-    const info =[
-        {
-            subtitle: `<p>Oasis & Oaks, the professional study abroad consultancy, can make things easier for you in getting you the visa. 
-            We know it’s a long and tedious process that needs thoughtful financial and academic preparation to set things in place before you start the process.</p>
-
-            <p>Thus to ease things for you, we have expert counsellors in the house who can assist you in the process
-             by explaining the procedures precisely and giving you first-hand information on the do’s and don’ts. 
-             Furthermore, our counsellors always help you with updated visa laws that eliminate unnecessary errors and help you finish your visa process within your stipulated time.</p>`,
-             bgImg: EventsImg,
-             bgImg2: EventsImg2,
-        }
-    ]
+   
     const offeicerexpectations = [
         {
             text: 'Admission Confirmation letter from the applied university.',
@@ -156,7 +142,7 @@ import Link from "next/link";
                 </div>
             </div>
         </section>
-        <Info info={info}/>
+       
         </>
     )
 }
