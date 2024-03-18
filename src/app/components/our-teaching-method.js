@@ -17,7 +17,7 @@ const TeachingMethods = ({detailsInfo = {}}) => {
               ) => (
                 <div key={`service-${index}`} className={`border rounded-xl border-[${borderColor}] border-opacity-45`}>
                  <div className="flex items-center gap-8 p-8">
-                    <Image src={icon} className="w-[5.6rem]"/>
+                    <Image src={icon} className="w-[5.6rem]" alt=""/>
                     <h4 className="font-bold text-2xl md:text-3xl">{iconInfo}</h4>
                  </div>
                 </div>

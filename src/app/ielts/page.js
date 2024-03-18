@@ -14,8 +14,8 @@ import Info from "../components/info-ielts-visa";
     const info =[
         {
             subtitle: `<p>Overall, the IELTS exam band score ranges from point 9 - which represents an expert English language user,
-             to a 4.5 which indicates a  limited user. The score you'll need depends on what is required either by the school you wish
-             to apply to or the government body you're  applying to. The validity of your test result spans for two years, within which
+             to a 4.5 which indicates a  limited user. The score you&apos;ll need depends on what is required either by the school you wish
+             to apply to or the government body you&apos;re  applying to. The validity of your test result spans for two years, within which
               you are expected to make all the arrangements needed.<p>
 
             <p>Our Prep Class gives you access to: Free Mock-test, Detailed and comprehensive lectures, 

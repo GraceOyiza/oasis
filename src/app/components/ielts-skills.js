@@ -9,7 +9,7 @@ const SkillsIelts= () => {
         <div className="custom-container">
             <div className="flex flex-col lg:flex-row pt-20 pb-0 lg:py-40 gap-16">
                 <div className="flex-1">
-                    <Image src={IeltSkills} />
+                    <Image src={IeltSkills} alt="" />
                 </div>
                 <div className="flex-1 gap-16">
                     <p className="p-20">IELTS exam can be Academic or General, and it assesses four key skills - Listening, Reading, Writing, and Speaking.  Both versions 

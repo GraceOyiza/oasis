@@ -16,19 +16,19 @@ const StudyAbroadBanner = () => {
                             we&apos;re your haven and best bet, as we offer excellent services with track 
                             records to guarantee your success.</p>
                         <div className="w-[10%] absolute right-20">
-                            <Image src={Vector5}/>
+                            <Image src={Vector5} alt=""/>
                         </div>
 
                     </div>
                     <div className="flex flex-col md:flex-row items-end">
                         <div className="pt-10 w-full md:w-[30%]">
-                            <Image src={Banner}/>
+                            <Image src={Banner} alt=""/>
                         </div>
                        <div className="w-full md:w-[40%]">
-                            <Image src={Banner1}/>
+                            <Image src={Banner1} alt=""/>
                        </div>
                         <div className="w-full md:w-[30%]">
-                            <Image src={Banner2}/>
+                            <Image src={Banner2} alt=""/>
                         </div>
                        
                     </div>

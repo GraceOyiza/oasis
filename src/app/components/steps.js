@@ -24,7 +24,7 @@ const Steps = ({bgColor = "#258575", guideSteps = [], subGuideSteps=[]}) => {
                             <p dangerouslySetInnerHTML={{ __html: subtitle }} className="text-white pb-10 text-[1.6rem] leading-10 content-wrapper"/>
                         </div>
                         <div className="w-full lg:w-[40%]">
-                            <Image src={stepImg} width={447} height={476}/>
+                            <Image src={stepImg} width={447} height={476} alt=""/>
                         </div>
                     </div>
                   )

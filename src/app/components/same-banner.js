@@ -13,9 +13,9 @@ const SameBanner = ({title, subtitle, bgColor ="bg-[#FEF5DC]", BannerImg, Banner
             : "flex-sm-column flex-lg-row"
         }`}>
                     <div className="relative flex gap-x-8 w-full lg:w-[55%]">
-                        <Image className="relative -top-12" width={315} height={511} src={BannerImg} />
-                        <Image className="relative -bottom-12" width={315} height={511} src={BannerImg2} />
-                        {PointerImg && <Image className="absolute right-20" width={186} height={63} src={PointerImg} />}
+                        <Image className="relative -top-12" width={315} height={511} src={BannerImg} alt=""/>
+                        <Image className="relative -bottom-12" width={315} height={511} src={BannerImg2} alt="j"/>
+                        {PointerImg && <Image className="absolute right-20" width={186} height={63} src={PointerImg} alt="y"/>}
                         
                     </div>
                     <div className="w-full lg:max-w-[51.9rem]">

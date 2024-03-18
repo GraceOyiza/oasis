@@ -19,7 +19,7 @@ const LatestPosts = ({ blogPage=false, posts=[], displayFilter=true }) => {
     } else {
       setPostsToDisplay(posts)
     }
-  }, [filter])
+  }, [filter, posts])
 
   return (
     <>

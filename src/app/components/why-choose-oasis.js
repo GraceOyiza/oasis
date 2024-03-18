@@ -19,7 +19,7 @@ const WhyChooseOasis = ({title, chooseOasis={}}) => {
                 ) => (
                   <div key={`oasis-${index}`}>
                       <div className="bg-white/[0.05] flex p-12 items-center" >
-                          <Image className="w-[2.4rem]" src={icon}/> 
+                          <Image className="w-[2.4rem]" src={icon} alt=""/> 
                           <p className="ms-10 text-3xl capitalize font-bold">{iconText}</p>
                       </div>
                     
@@ -29,7 +29,7 @@ const WhyChooseOasis = ({title, chooseOasis={}}) => {
               </div>
               </div>
               <div className="md:w-[40%] mt-14 md:mt-0">
-                <Image src={SideImg} />
+                <Image src={SideImg} alt=""/>
               </div>
             </div>
            </div>

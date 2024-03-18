@@ -23,7 +23,7 @@ const StudentVisaApplication = () => {
                 </div>
             </div>
             <div className="lg:min-w-[65%]">
-                <Image src={VisaImg} />
+                <Image src={VisaImg} alt="" />
             </div>
         </div>
     </div>

@@ -14,9 +14,9 @@ const UniApplicationBanner = ({title, subtitle, bgColor, bannerImg}) => {
                     <p>{subtitle}</p>
                 </div>
                 <div>
-                    <Image src={bannerImg}/>
-                    <Image src={bannerImg}/>
-                    <Image src={bannerImg}/>
+                    <Image src={bannerImg} alt=""/>
+                    <Image src={bannerImg} alt=""/>
+                    <Image src={bannerImg} alt=""/>
                 </div>
             </div>
         </div>

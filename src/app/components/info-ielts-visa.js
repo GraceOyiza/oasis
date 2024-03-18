@@ -20,8 +20,8 @@ const Info = ({info = [], bgColor}) => {
                             <p dangerouslySetInnerHTML={{ __html: subtitle }} />
                         </div>
                         <div className="w-full md:w-[40%] md:min-w-[40%] relative">
-                            <Image src={bgImg2} className="relative"/>
-                            <Image src={bgImg} className="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 h-full object-contain"/>
+                            <Image src={bgImg2} className="relative" alt=""/>
+                            <Image src={bgImg} className="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 h-full object-contain" alt=""/>
                         </div>
                     </div>
                 )

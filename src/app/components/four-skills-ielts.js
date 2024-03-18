@@ -20,7 +20,7 @@ const FourSkillsIelts= ({bgColor="#1B1B1B"}) => {
                         <div className="opacity-15 text-black p-10" style={{backgroundColor: bgColor}}>
                             <h3 className="h5 font-bold">Reading Section</h3>
                             <p>This evaluates how well students can read and identify general ideas, main ideas and details, and whether students 
-                                understand the author's inferences and opinions. The section consists of forty questions with three passages  and 
+                                understand the author&apos;s inferences and opinions. The section consists of forty questions with three passages  and 
                                 a random combination of the IELTS Reading question types.
                             </p>
                         </div>
@@ -35,11 +35,11 @@ const FourSkillsIelts= ({bgColor="#1B1B1B"}) => {
                         </div>
                         <div className="opacity-15 text-black p-10" style={{backgroundColor: bgColor}}>
                             <h3 className="h5 font-bold">Speaking Section</h3>
-                            <p>This assesses students' communication prowess, how well they can articulate opinions and 
+                            <p>This assesses students&apos; communication prowess, how well they can articulate opinions and 
                                 information on everyday topics, common experiences, as well as express and justify their opinions. The section is sub-divided into three parts.
                                 </p>
                                 <ul>
-                                    <li>general questions on students' name, career, hobbies and preferences </li>
+                                    <li>general questions on students&apos; name, career, hobbies and preferences </li>
                                     <li>the use of a cue card containing a question students are expected to share their experience on in two minutes.</li>
                                     <li>students are expected to express their ideas on selected questions.</li>
                                 </ul>
